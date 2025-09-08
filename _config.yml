@@ -115,8 +115,8 @@ analytics:
 author:
   name             : "Kwon Kwan Woo"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "my interest is Artificial Intelligence, Natural Language Processing, Deep Learning."
-  location         : "Somewhere"
+  bio              : "My **interest** is Artificial Intelligence, Natural Language Processing, Deep Learning."
+  location         : "Daejeon, South Korea"
   email            :
   links:
     - label: "Email"
