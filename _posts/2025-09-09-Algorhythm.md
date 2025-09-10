@@ -1,10 +1,6 @@
 ---
-title: "테스트 글"
-categories:
-  - 대학교
-  - 2학년-2학기
-tags:
-  - AI
-  - 공부
+title: "2학년 2학기"
+layout: single
+permalink: /sophomore-2nd-semester/
 ---
-본문 내용…
+이곳은 2학년 2학기 노트 모음 페이지입니다.
