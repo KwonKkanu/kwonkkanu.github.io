@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Algorhythm
+title: "Algorhythm"
 icon: fas fa-book
 order: 4
 ---
