@@ -12,6 +12,7 @@ main:
   #   url: /sitemap/
 sidebar:
   - title: "2학년 2학기"
+    url: /sophomore-2nd-semester/
     children:
       - title: "자료구조"
         url: /sophomore-2nd-semester/data-structures/
