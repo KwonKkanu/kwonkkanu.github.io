@@ -1,5 +1,16 @@
-<!-- start custom head snippets -->
+<style>
+/* 기본: 접어두기 */
+.sidebar .nav__list li.has-children > ul { display: none; margin-left: 0; }
+/* 펼쳐진 상태 */
+.sidebar .nav__list li.has-children.open > ul { display: block; }
 
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
+/* 부모 라벨: 클릭 가능하게 보이도록 */
+.sidebar .nav__list li.has-children > a,
+.sidebar .nav__list li.has-children > span { cursor: pointer; user-select: none; }
 
-<!-- end custom head snippets -->
+/* 접힘/펼침 표시(▶︎/▼) */
+.sidebar .nav__list li.has-children > .toggle {
+  display:inline-block; margin-right:.35rem; font-size:.85em; transform:rotate(0deg); transition:transform .2s ease;
+}
+.sidebar .nav__list li.has-children.open > .toggle { transform:rotate(90deg); }
+</style>
