@@ -1,3 +1,47 @@
-<!-- start custom footer snippets -->
+<script>
+(function() {
+  const sidebar = document.querySelector('.sidebar');
+  if (!sidebar) return;
 
-<!-- end custom footer snippets -->
+  // 부모(li) 중 자식 UL을 가진 항목을 찾고 접힘/펼침 기능 부여
+  sidebar.querySelectorAll('.nav__list li').forEach(function(li){
+    // 자식 중 UL 찾기
+    const sub = Array.from(li.children).find(function(el){ return el.tagName === 'UL'; });
+    if (!sub) return; // children 없는 항목은 패스
+
+    li.classList.add('has-children');
+
+    // 부모 라벨(a 또는 span) 찾기
+    const label = Array.from(li.children).find(function(el){
+      return el.tagName === 'A' || el.tagName === 'SPAN';
+    });
+    if (!label) return;
+
+    // 접힘/펼침 인디케이터 추가
+    const indicator = document.createElement('span');
+    indicator.className = 'toggle';
+    indicator.setAttribute('aria-hidden','true');
+    indicator.textContent = '▸';
+    label.prepend(indicator);
+
+    // 초기: 접힘 상태
+    li.classList.remove('open');
+
+    // 클릭 시 토글 (부모는 이동하지 않도록 기본 동작 막기)
+    label.addEventListener('click', function(e){
+      e.preventDefault();
+      li.classList.toggle('open');
+    });
+  });
+
+  // 현재 페이지가 자식 메뉴 중 하나라면, 해당 가지는 자동으로 펼쳐주기
+  const current = sidebar.querySelector('.nav__list a[href="'+ location.pathname +'"]');
+  if (current) {
+    let p = current.parentElement;
+    while (p && p !== sidebar) {
+      if (p.matches && p.matches('li.has-children')) p.classList.add('open');
+      p = p.parentElement;
+    }
+  }
+})();
+</script>
