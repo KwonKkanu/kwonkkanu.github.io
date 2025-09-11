@@ -314,7 +314,21 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
+  # 모든 포스트에 적용
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      sidebar:
+        nav: "sidebar"
+
+  # 모든 페이지에 적용
   - scope:
       path: ""
       type: pages
@@ -322,9 +336,8 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
       sidebar:
         nav: "sidebar"
-    
