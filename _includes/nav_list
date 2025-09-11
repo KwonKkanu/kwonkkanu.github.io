@@ -27,7 +27,7 @@
                   {% endif %}
 
                   {%- if child.children -%}
-                    {%- include nav_list.html nav=child.children -%}
+                    {%- include nav_list items=child.children -%}
                   {%- endif -%}
                 </li>
               {% endfor %}
@@ -38,3 +38,24 @@
     {% endfor %}
   </ul>
 </nav>
+
+{% comment %}
+재귀 호출 모드: include.items가 있을 때는 바로 순환
+{% endcomment %}
+{% if include.items %}
+  <ul>
+    {% for item in include.items %}
+      <li>
+        {% if item.url %}
+          <a href="{{ item.url | relative_url }}"{% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a>
+        {% else %}
+          <span>{{ item.title }}</span>
+        {% endif %}
+
+        {% if item.children %}
+          {% include nav_list items=item.children %}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
