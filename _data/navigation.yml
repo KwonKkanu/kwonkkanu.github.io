@@ -11,15 +11,23 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 sidebar:
-  - title: "2학년 2학기"
-    url: /sophomore-2nd-semester/
+  - title: "노트"
     children:
-      - title: "자료구조"
-        url: /sophomore-2nd-semester/data-structures/
-      - title: "운영체제"
-        url: /sophomore-2nd-semester/os/
-      - title: "알고리즘"
-        url: /sophomore-2nd-semester/algorithms/
+      - title: "2학년 2학기"
+        children:
+          - title: "데이터모델링"
+            url: /notes/sophomore-2nd-semester/data-modeling/
+          - title: "자바"
+            url: /notes/sophomore-2nd-semester/java/
+          - title: "알고리즘"
+            url: /notes/sophomore-2nd-semester/algorithms/
+          - title: "윈도우프로그래밍"
+            url: /notes/sophomore-2nd-semester/windows-programming/
+          - title: "기계학습"
+            url: /notes/sophomore-2nd-semester/machine-learning/
+      - title: "임시 폴더"
+        children:
+          - title: "예시 문서"
+            url: /notes/temp/example/
   - title: "Projects"
     url: /projects/
-
