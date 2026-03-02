@@ -1,3 +1,10 @@
+---
+layout: single
+title: "프로젝트 협업 툴 JIRA 정리"
+sidebar:
+  nav: "sidebar"
+permalink: /notes/temp/JIRA/
+---
 # 프로젝트 협업 툴 JIRA 정리
 
 JIRA란 애자일 방식의 업무효율을 높여주는 소프트웨어 서비스다. (애자일이란 짧은 주기로 프로덕트에 필요한 기능을 우선순위에 따라 하나씩 개발하는 방법이다.)
