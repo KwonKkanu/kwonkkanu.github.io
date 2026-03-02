@@ -1,5 +1,4 @@
 ---
----
 layout: single
 title: "프로젝트 협업 툴 JIRA 정리"
 permalink: /notes/temp/JIRA/
