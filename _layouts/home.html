@@ -8,6 +8,7 @@ layout: archive
 {% assign featured_notes = site.notes | where: "featured", true %}
 
 {% if featured_notes.size > 0 %}
+  {% comment %}The home page highlights a few representative study notes first.{% endcomment %}
   <section class="home-section">
     <h2 class="archive__subtitle">대표 노트</h2>
     <div class="entries-{{ entries_layout }}">
@@ -24,6 +25,7 @@ layout: archive
 {% endif %}
 
 {% if posts.size > 0 %}
+  {% comment %}Posts remain optional; the section renders only when posts actually exist.{% endcomment %}
   <section class="home-section">
     <h2 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h2>
     <div class="entries-{{ entries_layout }}">

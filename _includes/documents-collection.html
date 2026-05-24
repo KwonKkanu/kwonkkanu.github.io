@@ -1,3 +1,7 @@
+{% comment %}
+  Shared document list renderer.
+  Accepts either explicit entries or a collection name and can optionally limit results.
+{% endcomment %}
 {% assign entries = include.entries | default: site[include.collection] | where_exp: "post", "post.hidden != true" %}
 
 {% if include.sort_by %}

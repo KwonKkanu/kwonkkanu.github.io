@@ -1,11 +1,12 @@
+# Site identity
 minimal_mistakes_skin: "default"
 
 locale: "ko-KR"
 title: "Kwon Kwan Woo"
 title_separator: "-"
-subtitle: "Portfolio & Notes"
+subtitle: "Study Notes"
 name: "Kwon Kwan Woo"
-description: "AI, NLP, Deep Learning, 그리고 소프트웨어 개발 학습 기록을 담는 포트폴리오 사이트."
+description: "AI, NLP, Deep Learning, 그리고 소프트웨어 개발 공부 기록을 담는 GitHub Pages 사이트."
 url: "https://kwonkkanu.github.io"
 baseurl:
 repository: "kwonkkanu/kwonkkanu.github.io"
@@ -13,6 +14,7 @@ masthead_title: "Kwon Kwan Woo"
 breadcrumbs: true
 words_per_minute: 200
 
+# Search
 search: true
 search_full_content: true
 search_provider: "lunr"
@@ -29,6 +31,7 @@ social:
     - "https://kwonkkanu.github.io"
     - "https://github.com/kwonkkanu"
 
+# Author / profile
 author:
   name: "Kwon Kwan Woo"
   avatar:
@@ -50,6 +53,7 @@ footer:
       url: "https://github.com/kwonkkanu"
   since: "2025"
 
+# Files to include or exclude from the built site
 include:
   - .htaccess
   - _pages
@@ -78,6 +82,22 @@ exclude:
   - package-lock.json
   - Rakefile
   - README
+  - VAULT_MAP.md
+  - .github/README.md
+  - assets/README.md
+  - assets/css/README.md
+  - assets/js/README.md
+  - assets/pdfs/README.md
+  - docs/README.md
+  - test/README.md
+  - _data/README.md
+  - _includes/README.md
+  - _layouts/README.md
+  - _notes/README.md
+  - _notes/sophomore-2nd-semester/README.md
+  - _notes/temp/README.md
+  - _pages/README.md
+  - _sass/README.md
   - tmp
   - /docs
   - /test
@@ -88,6 +108,7 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+# Markdown / rendering
 markdown: kramdown
 highlighter: rouge
 excerpt_separator: "\n\n"
@@ -102,13 +123,16 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# Stylesheet pipeline
 sass:
   sass_dir: _sass
   style: compressed
 
+# URL and collection structure
 permalink: /:categories/:title/
 timezone: "Asia/Seoul"
 
+# Main content collections
 collections:
   notes:
     output: true
@@ -117,6 +141,7 @@ collections:
 paginate: 5
 paginate_path: /page:num/
 
+# GitHub Pages-compatible plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -144,6 +169,7 @@ compress_html:
   ignore:
     envs: development
 
+# Default front matter by content type
 defaults:
   - scope:
       path: ""
@@ -178,5 +204,3 @@ defaults:
       comments: false
       share: false
       related: false
-      sidebar:
-        nav: "sidebar"

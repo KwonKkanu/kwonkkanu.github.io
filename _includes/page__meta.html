@@ -1,3 +1,6 @@
+{% comment %}
+  Prefer last_modified_at for notes and documentation pages, then fall back to date for posts.
+{% endcomment %}
 {% assign document = post | default: page %}
 {% assign display_date = document.last_modified_at | default: document.date %}
 {% if document.read_time or document.show_date %}

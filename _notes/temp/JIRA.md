@@ -7,6 +7,7 @@ featured: true
 toc: true
 ---
 
+<!-- Topical memo page kept in the temporary notes bucket until it gets a permanent category. -->
 JIRA란 애자일 방식의 업무효율을 높여주는 소프트웨어 서비스다. (애자일이란 짧은 주기로 프로덕트에 필요한 기능을 우선순위에 따라 하나씩 개발하는 방법이다.)
 
 프로젝트는 기획 및 분석 -> 설계 -> 개발 -> 테스트 정도의 순서를 가지고 진행하는데 JIRA는 이러한 개발 과정에서 커뮤니케이션과 버그 이슈 관리등을 도와준다.

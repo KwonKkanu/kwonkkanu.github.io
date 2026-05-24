@@ -4,7 +4,9 @@ permalink: /notes/
 layout: collection
 collection: notes
 entries_layout: list
-sort_by: title
+sort_by: last_modified_at
+sort_order: reverse
 ---
 
-수업 자료, PDF 링크, 주제별 메모를 한곳에 모아둔 노트 아카이브입니다. 현재는 강의 중심으로 정리하고 있고, 이후 프로젝트 메모와 기술 기록도 같은 구조로 확장할 예정입니다.
+<!-- Archive page for the notes collection. -->
+수업 자료, PDF 링크, 주제별 메모를 한곳에 모아둔 노트 아카이브입니다. 최근에 손본 기록부터 먼저 보이도록 정리해두었습니다.

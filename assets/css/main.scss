@@ -8,6 +8,7 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* Custom landing-page components for the study notes homepage and overview pages. */
 .hero-panel {
   margin: 0 0 2rem;
   padding: 2rem;
@@ -37,16 +38,14 @@ search: false
   font-size: 1.05rem;
 }
 
-.quick-links,
-.portfolio-grid {
+.quick-links {
   display: grid;
   gap: 1rem;
   margin: 1.5rem 0 2rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-.quick-card,
-.portfolio-card {
+.quick-card {
   display: block;
   height: 100%;
   padding: 1.25rem;
@@ -59,15 +58,13 @@ search: false
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
-.quick-card:hover,
-.portfolio-card:hover {
+.quick-card:hover {
   transform: translateY(-3px);
   border-color: rgba(36, 109, 255, 0.25);
   box-shadow: 0 18px 36px rgba(15, 23, 42, 0.1);
 }
 
-.quick-card__title,
-.portfolio-card__title {
+.quick-card__title {
   display: block;
   margin-bottom: 0.35rem;
   font-size: 1.1rem;
@@ -75,7 +72,6 @@ search: false
 }
 
 .quick-card__text,
-.portfolio-card__text,
 .section-lead {
   color: #4b5563;
 }
