@@ -20,8 +20,6 @@ layout: default
 {% assign page_heading = page.title | default: page.slug | replace: "-", " " | replace: "_", " " %}
 
 <div id="main" role="main">
-  {% include sidebar.html %}
-
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
     {% if page_heading %}<meta itemprop="headline" content="{{ page_heading | replace: '|', '&#124;' | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}

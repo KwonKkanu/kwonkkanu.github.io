@@ -88,3 +88,18 @@ search: false
 .section-title {
   margin-top: 2.5rem;
 }
+
+/* Remove the old sidebar-reserved gutter and give the content a wider reading area. */
+@media (min-width: 1024px) {
+  .masthead__inner-wrap,
+  #main {
+    max-width: 1480px;
+  }
+
+  .page,
+  .archive {
+    float: none;
+    width: 100%;
+    padding-inline-end: 0;
+  }
+}
