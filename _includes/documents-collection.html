@@ -8,6 +8,6 @@
   {% assign entries = entries | reverse %}
 {% endif %}
 
-{%- for post in entries -%}
+{%- for post in entries limit: include.limit -%}
   {% include archive-single.html type=include.type %}
 {%- endfor -%}

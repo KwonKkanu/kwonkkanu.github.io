@@ -1,10 +1,9 @@
 ---
-layout: single
 title: "윈도우프로그래밍"
 permalink: /notes/sophomore-2nd-semester/windows-programming/
-sidebar:
-  nav: "sidebar"
-toc: true
+excerpt: "윈도우프로그래밍 실습 리뷰와 PDF 자료를 모아둔 페이지입니다."
+last_modified_at: 2026-05-24
+featured: true
 ---
 윈도우프로그래밍 수업 리뷰입니다.
 

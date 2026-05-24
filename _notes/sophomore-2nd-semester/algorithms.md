@@ -1,10 +1,9 @@
 ---
-layout: single
 title: "알고리즘"
 permalink: /notes/sophomore-2nd-semester/algorithms/
-sidebar:
-  nav: "sidebar"
-toc: true
+excerpt: "알고리즘 수업 과제와 PDF 자료를 모아둔 페이지입니다."
+last_modified_at: 2026-05-24
+featured: true
 ---
 
 여기는 알고리즘 수업 관련 자료 모음 페이지입니다.  

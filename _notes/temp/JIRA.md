@@ -1,9 +1,10 @@
 ---
-layout: single
 title: "프로젝트 협업 툴 JIRA 정리"
 permalink: /notes/temp/JIRA/
-sidebar:
-  nav: "sidebar"
+excerpt: "JIRA의 역할과 스크럼 보드, 칸반 방식에 대한 메모입니다."
+last_modified_at: 2026-05-24
+featured: true
+toc: true
 ---
 
 JIRA란 애자일 방식의 업무효율을 높여주는 소프트웨어 서비스다. (애자일이란 짧은 주기로 프로덕트에 필요한 기능을 우선순위에 따라 하나씩 개발하는 방법이다.)
