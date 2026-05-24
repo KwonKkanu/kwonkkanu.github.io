@@ -4,10 +4,11 @@
   {% assign teaser = site.teaser %}
 {% endif %}
 
+{% assign fallback_title = post.title | default: post.slug | replace: "-", " " | replace: "_", " " %}
 {% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+  {% assign title = fallback_title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
-  {% assign title = post.title %}
+  {% assign title = fallback_title %}
 {% endif %}
 
 <div class="{{ include.type | default: 'list' }}__item">

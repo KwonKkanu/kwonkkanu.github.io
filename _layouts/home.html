@@ -5,14 +5,14 @@ layout: archive
 {{ content }}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-{% assign featured_notes = site.notes | where: "featured", true %}
+{% assign notes = site.notes %}
 
-{% if featured_notes.size > 0 %}
-  {% comment %}The home page highlights a few representative study notes first.{% endcomment %}
+{% if notes.size > 0 %}
+  {% comment %}The home page shows study notes without requiring custom front matter.{% endcomment %}
   <section class="home-section">
-    <h2 class="archive__subtitle">대표 노트</h2>
+    <h2 class="archive__subtitle">최근 노트</h2>
     <div class="entries-{{ entries_layout }}">
-      {% include documents-collection.html entries=featured_notes type=entries_layout limit=3 %}
+      {% include documents-collection.html entries=notes type=entries_layout limit=5 %}
     </div>
     <p class="home-section__link"><a href="{{ '/notes/' | relative_url }}">전체 노트 보기</a></p>
   </section>

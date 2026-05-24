@@ -23,3 +23,7 @@
 - [[index]]: 공부 기록 사이트의 홈
 - [[_pages/notes|Notes]]
 - [[_pages/about|About]]
+
+## Current Notes Bucket
+
+- [[_notes/코테준비|코테준비]]: 코딩 테스트 준비 노트를 넣는 기본 폴더

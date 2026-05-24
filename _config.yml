@@ -94,8 +94,6 @@ exclude:
   - _includes/README.md
   - _layouts/README.md
   - _notes/README.md
-  - _notes/sophomore-2nd-semester/README.md
-  - _notes/temp/README.md
   - _pages/README.md
   - _sass/README.md
   - tmp

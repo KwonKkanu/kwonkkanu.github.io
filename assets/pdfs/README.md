@@ -13,8 +13,7 @@
 
 ## 관련 노트
 
-- [[_notes/sophomore-2nd-semester/algorithms|알고리즘]]
-- [[_notes/sophomore-2nd-semester/windows-programming|윈도우프로그래밍]]
+- 현재는 `코테준비` 폴더 아래에 새 노트를 추가해 이 자료들과 연결하는 방식으로 사용할 수 있습니다.
 
 ## 관련 폴더
 
