@@ -83,19 +83,20 @@ exclude:
   - Rakefile
   - README
   - VAULT_MAP.md
-  - .github/README.md
-  - assets/README.md
-  - assets/css/README.md
-  - assets/js/README.md
-  - assets/pdfs/README.md
-  - docs/README.md
-  - test/README.md
-  - _data/README.md
-  - _includes/README.md
-  - _layouts/README.md
-  - _notes/README.md
-  - _pages/README.md
-  - _sass/README.md
+  - .github/.github_README.md
+  - assets/assets_README.md
+  - assets/css/css_README.md
+  - assets/js/js_README.md
+  - assets/pdfs/pdfs_README.md
+  - docs/docs_README.md
+  - test/test_README.md
+  - _data/_data_README.md
+  - _includes/_includes_README.md
+  - _layouts/_layouts_README.md
+  - _notes/_notes_README.md
+  - _notes/코테준비/코테준비_README.md
+  - _pages/_pages_README.md
+  - _sass/_sass_README.md
   - tmp
   - /docs
   - /test
