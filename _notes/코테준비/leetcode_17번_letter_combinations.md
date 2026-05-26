@@ -71,10 +71,6 @@ class Solution(object):
             "8": "tuv",
             "9": "wxyz"
         }
-
-        if digits == "":
-            return []
-
         InputNum = list(digits)
 
         for i in range(len(InputNum)):
